@@ -8,7 +8,6 @@ const quizSchema = new mongoose.Schema({
     phone: String,
   },
   questions: mongoose.Schema.Types.Mixed,
-  date: { type: Date, default: Date.now },
 });
 
 const Quiz = mongoose.model("Quiz", quizSchema);

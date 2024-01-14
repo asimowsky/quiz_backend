@@ -19,7 +19,6 @@ const createQuiz = async (req, res, next) => {
         answer,
       })),
       quizId: savedQuiz._id,
-      date: savedQuiz.date,
     });
   } catch (err) {
     next(err);
